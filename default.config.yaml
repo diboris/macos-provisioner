@@ -1,64 +1,41 @@
 homebrew_installed_packages:
-  - ansible
   - autoconf
-  - awscli
-  - aws-iam-authenticator
   - bash-completion
-  - bazelisk
-  - buildifier
   - colordiff
   - coreutils
   - curl
   - dockutil
-  - docker-credential-helper-ecr
-  - gabrie30/utils/ghorg
   - git
   - git-lfs
-  - gnu-getopt
-  - graphviz
   - go
-  - goreleaser
   - gzip
-  - helm
-  - helmfile
   - jenv
   - jq
-  - kind
   - krew
   - kubernetes-cli
   - kustomize
   - mas
-  - minio-mc
   - node@16
-  - norwoodj/tap/helm-docs
   - openssl
-  - operator-sdk
-  - packer
   - pkg-config
-  - postgresql
-  - s3cmd
-  - skaffold
-  - stern
   - telnet
-  - terraform
-  - terragrunt
   - tree
   - watch
   - wget
   - yq
+  - zsh
   - zsh-history-substring-search
 
 homebrew_cask_apps:
   - adobe-acrobat-reader
   - authy
   - chrome-remote-desktop-host
+  - cornercal
   - docker
   - google-chrome
   - google-cloud-sdk
-  - hubstaff
   - iterm2
   - jetbrains-toolbox
-  - mucommander
   - mysides
   - plex
   - postman
@@ -73,8 +50,6 @@ homebrew_cask_apps:
   - temurin11
   - vlc
   - whatsapp
-  - zoom
-  - homebrew/cask-drivers/yubico-yubikey-manager
 
 homebrew_taps:
   - homebrew/core
@@ -82,12 +57,8 @@ homebrew_taps:
   - homebrew/cask-versions
 
 mas_installed_apps:
-  - id: 1475387142
-    name: Tailscale (1.20.2)
   - id: 1352778147
     name: Bitwarden (1.30.0)
-  - id: 497799835
-    name: Xcode (13.2.1)
 
 mas_email: false
 mas_password: false
@@ -107,8 +78,6 @@ favourites:
   - name: Workspace
     path: workspace
 
-background_picture: /System/Library/Desktop Pictures/Monterey Graphic.heic
-
 ssh_private_key: false
 ssh_public_key: false
 
@@ -127,18 +96,6 @@ dotfiles:
     dest: "{{ ansible_env.HOME }}/.oh-my-zsh/custom/profile.zsh"
   - src: iterm-profile.json
     dest: "{{ ansible_env.HOME }}/Library/Application Support/iTerm2/DynamicProfiles/iterm-profile.json"
-  - src: ghorg-conf.yaml
-    dest: "{{ ansible_env.HOME }}/.config/ghorg/conf.yaml"
-  - src: docker-config.json
-    dest: "{{ ansible_env.HOME }}/.docker/config.json"
-
-ghorg:
-  - name: slamdev
-    scm: github
-    clone-type: user
-    path: "{{ ansible_env.HOME }}"
-    outputDir: slamdev
-    base-url: https://api.github.com/
 
 jenv_plugins:
   - export

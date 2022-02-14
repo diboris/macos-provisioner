@@ -25,7 +25,6 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 export GOPATH="$HOME/go"
 export GOROOT="${brew_path}/opt/go"
-export TF_PLUGIN_CACHE_DIR="${HOME}/.terraform-plugin-cache"
 
 export VISUAL=vim
 export EDITOR=$VISUAL

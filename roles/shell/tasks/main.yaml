@@ -19,5 +19,5 @@
   become: true
 
 - name: Set ZSH as the default shell
-  shell: "chsh -s {{ brew_bin }}/zsh {{ lookup('env', 'USER') }}"
+  shell: "chsh -s {{ brew_bin }}/zsh {{ ansible_user }}"
   become: true

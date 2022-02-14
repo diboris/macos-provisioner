@@ -1,6 +1,6 @@
 [user]
-  name = Valentin Fedoskin
-  email = valentin.fedoskin@gmail.com
+  name = Daria Borisova
+  email = daria.borisovaa@gmail.com
 [core]
   editor = vi
   excludesfile = ~/.gitignore
@@ -22,7 +22,3 @@
   prompt = false
 [pull]
   rebase = true
-[url "git@bitbucket.org:"]
-  insteadOf = https://bitbucket.org/
-[url "git@github.com:"]
-  insteadOf = https://github.com/
