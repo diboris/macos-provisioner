@@ -9,11 +9,10 @@
       with_fileglob:
         - "{{ playbook_dir }}/config.yaml"
   roles:
-#    - role: elliotweiser.osx-command-line-tools
-#    - role: rosetta
-#    - role: geerlingguy.mac.homebrew
+    - role: elliotweiser.osx-command-line-tools
+    - role: rosetta
+    - role: geerlingguy.mac.homebrew
     - role: shell
-#    - role: mas
     - role: osx-defaults
     - role: gantsign.oh-my-zsh
       users:
