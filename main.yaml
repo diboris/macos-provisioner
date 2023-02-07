@@ -18,7 +18,6 @@
     - role: gantsign.oh-my-zsh
       users:
         - username: "{{ ansible_user_id }}"
-    - role: krew
     - role: mysides
     - role: ssh-keys
     - role: dotfiles

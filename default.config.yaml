@@ -115,10 +115,10 @@ dotfiles:
 ghorg:
   - name: diboris
     scm: github
-    clone-type: user
+    cloneType: user
     path: "{{ ansible_env.HOME }}"
-    outputDir: diboris
-    base-url: https://api.github.com/
+    outputDir: workspace/diboris
+    baseUrl: https://api.github.com/
 
 jenv_plugins:
   - export
