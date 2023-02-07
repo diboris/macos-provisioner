@@ -1,8 +1,3 @@
-- name: Disable sleep mode
-  ansible.builtin.command:
-    cmd: pmset -a sleep 0 hibernatemode 0 disablesleep 1
-  become: true
-
 - name: Remove recent items from Dock
   community.general.osx_defaults:
     domain: com.apple.dock.plist

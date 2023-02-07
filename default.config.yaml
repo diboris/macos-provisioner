@@ -29,12 +29,14 @@ homebrew_installed_packages:
 
 homebrew_cask_apps:
   - adobe-acrobat-reader
+  - airflow
   - authy
   - chrome-remote-desktop-host
   - cornercal
   - docker
   - google-chrome
   - google-cloud-sdk
+  - haptickey
   - hot
   - hubstaff
   - iterm2
