@@ -13,6 +13,7 @@
     - role: rosetta
     - role: geerlingguy.mac.homebrew
     - role: shell
+    - role: mas
     - role: osx-defaults
     - role: gantsign.oh-my-zsh
       users:
@@ -22,3 +23,4 @@
     - role: ssh-keys
     - role: dotfiles
     - role: jenv
+    - role: ghorg
