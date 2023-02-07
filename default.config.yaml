@@ -1,20 +1,22 @@
 homebrew_installed_packages:
+  - ansible
   - autoconf
   - bash-completion
   - colordiff
   - coreutils
   - curl
-  - dockutil
+  - esolitos/ipa/sshpass
+  - gabrie30/utils/ghorg
   - git
   - git-lfs
+  - graphviz
   - go
   - gzip
   - jenv
   - jq
-  - krew
-  - kubernetes-cli
-  - kustomize
-  - node@16
+  - less
+  - mas
+  - node@18
   - openssl
   - pkg-config
   - telnet
@@ -33,12 +35,16 @@ homebrew_cask_apps:
   - docker
   - google-chrome
   - google-cloud-sdk
+  - hot
+  - hubstaff
   - iterm2
   - jetbrains-toolbox
+  - mucommander
   - mysides
   - plex
   - postman
   - qbittorrent
+  - scroll-reverser
   - shifty
   - skype
   - slack
@@ -47,21 +53,33 @@ homebrew_cask_apps:
   - telegram
   - temurin
   - temurin11
+  - temurin17
   - vlc
   - whatsapp
+  - zoom
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/cask-versions
 
+mas_installed_apps:
+  - id: 1352778147
+    name: Bitwarden (1.30.0)
+#  - id: 497799835
+#    name: Xcode (13.2.1)
+
+mas_email: false
+mas_password: false
+mas_signin_dialog: false
+
 oh_my_zsh_plugins:
   - git
   - kubectl
   - docker
+  - zsh-history-substring-search
 
-krew_plugins:
-  - ctx
+krew_plugins: [ ]
 
 favourites:
   - name: Home
@@ -87,6 +105,18 @@ dotfiles:
     dest: "{{ ansible_env.HOME }}/.oh-my-zsh/custom/profile.zsh"
   - src: iterm-profile.json
     dest: "{{ ansible_env.HOME }}/Library/Application Support/iTerm2/DynamicProfiles/iterm-profile.json"
+  - src: ghorg-conf.yaml
+    dest: "{{ ansible_env.HOME }}/.config/ghorg/conf.yaml"
+  - src: docker-config.json
+    dest: "{{ ansible_env.HOME }}/.docker/config.json"
+
+ghorg:
+  - name: diboris
+    scm: github
+    clone-type: user
+    path: "{{ ansible_env.HOME }}"
+    outputDir: diboris
+    base-url: https://api.github.com/
 
 jenv_plugins:
   - export
