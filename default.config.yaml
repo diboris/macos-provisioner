@@ -15,6 +15,7 @@ homebrew_installed_packages:
   - jenv
   - jq
   - less
+  - k6
   - mas
   - node@18
   - openssl
@@ -35,28 +36,26 @@ homebrew_cask_apps:
   - cornercal
   - docker
   - google-chrome
-  - google-cloud-sdk
-  - haptickey
   - hot
-  - hubstaff
   - iterm2
   - jetbrains-toolbox
   - mucommander
   - mysides
+  - openvpn-connect
   - plex
   - postman
+  - redisinsight
   - qbittorrent
   - scroll-reverser
+  - sequel-ace
   - shifty
   - skype
   - slack
   - stremio
   - sublime-text
   - telegram
-  - temurin
-  - temurin11
-  - temurin17
   - vlc
+  - vysor
   - whatsapp
   - zoom
 
@@ -68,8 +67,6 @@ homebrew_taps:
 mas_installed_apps:
   - id: 1352778147
     name: Bitwarden (1.30.0)
-#  - id: 497799835
-#    name: Xcode (13.2.1)
 
 mas_email: false
 mas_password: false
@@ -77,7 +74,6 @@ mas_signin_dialog: false
 
 oh_my_zsh_plugins:
   - git
-  - kubectl
   - docker
   - zsh-history-substring-search
 
@@ -120,5 +116,4 @@ ghorg:
     outputDir: workspace/diboris
     baseUrl: https://api.github.com/
 
-jenv_plugins:
-  - export
+jenv_plugins: [ ]
